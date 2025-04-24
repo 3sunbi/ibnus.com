@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="삼선비를 소개합니다!!">
+<meta name="author" content="Geonhwi Hwang">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles/theprex2.css">
+<script src="scripts/theprex2.js"></script>
+<link rel="icon" type="image/png" href="https://github.com/88gh/3sunbi.com/blob/main/images/gat_s_19JUL2024.png?raw=true">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<title>3sunbi</title>
+</head>
+<body>
+<!-- 
+Copyright (C) 2025 Geonhwi Hwang. All Rights Reserved.
+NOTICE: All information contained herein is, and remains the property of Geonhwi Hwang. The intellectual and technical concepts contained herein are proprietary and protected by copyright law.
+Unauthorized use, duplication, or dissemination of this information is strictly forbidden without prior written permission from Geonhwi Hwang. This includes unauthorized analysis, deobfuscation, or reverse engineering for any purpose.
+-->
+
+<!-- HEADER -->
+<header id="site-header" class="splash-active">
+  <!-- (A) SPLASH ONLY: big 4_3 logo -->
+  <div class="splash-logo-container">
+    <img
+      id="splash-logo"
+      src="https://github.com/88gh/3sunbi.com/blob/main/images/3sunbiedu_sq_4_3.png?raw=true"
+      alt="Splash Logo"
+    />
+  </div>
+
+  <!-- (B) NORMAL HEADER (hidden while .splash-active is present) -->
+  <div class="normal-header-container">
+    <!-- The lines at the bottom are in CSS via .normal-header-container::after -->
+
+    <div class="header-inner">
+      <!-- Left: smaller final logo -->
+      <a href="https://www.3sunbi.com" class="logo-link">
+        <img
+          id="logo"
+          src="https://github.com/88gh/3sunbi.com/blob/main/images/3sunbiedu_sq_4_3_2.png?raw=true"
+          alt="Logo"
+        />
+      </a>
+
+      <!-- Right: your nav tabs -->
+      <nav class="tabs">
+        <a href="#about"   class="nav-link">About</a>
+        <a href="#history" class="nav-link">History</a>
+        <a href="#career"  class="nav-link">Career</a>
+        <a href="#vision"  class="nav-link">Vision</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- HERO Section -->
+<!--
+<section class="pt-32 pb-20 text-center" style="margin-top: 160px; min-height: 100px;">
+  <div 
+    class="container mx-auto px-6" 
+    style="
+      background:
+        linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)),
+        url('https://github.com/88gh/3sunbi.com/blob/main/images/3sunbi_bg_1.png?raw=true') center center / cover no-repeat;
+      min-height: 300px;
+    "
+  >
+    <p class="text-lg text-gray-600 mb-8">
+      삼선비 홈페이지에 오신 것을 환영합니다!
+    </p>
+  </div>
+</section>
+-->
+
+<!-- Updated version: text first, then the picture (no transparency) -->
+<section class="pt-32 pb-20 text-center" style="margin-top: 160px; min-height: 100px;">
+  <div class="container">
+    <h2 style="color: #000; font-weight: bold; margin-bottom: 10px; text-align: center;">
+      삼선비 홈페이지에 오신 것을 환영합니다!
+    </h2>
+    <img
+      src="https://github.com/88gh/3sunbi.com/blob/main/images/3sunbi_bg_1.png?raw=true"
+      alt="3sunbi background"
+      class="mx-auto"
+      style="max-width: 100%; height: auto;"
+    />
+  </div>
+</section>
+
+
+
+<!-- About Section (with "선비들" content) -->
+<section id="about" style="margin-top: 80px;">
+  <div class="container">
+    <h2 class="text-3xl font-bold mb-12 text-center gradient-text">
+      <img 
+        src="https://github.com/88gh/3sunbi.com/blob/main/images/gat/pinkgat_s_cb.png?raw=true" 
+        alt="Pink Gat"
+        style="width: 70px; height: auto;"
+      /><br>
+      선비들</h2>
+<!--    <h2 style="margin-bottom: 20px;">선비들</h2>-->
+    <div class="row justify-content-center">
+      <!-- 박준 -->
+      <div class="col-md-4 mb-4">
+        <img
+          src="https://github.com/88gh/3sunbi.com/blob/main/images/psunbi_profile.jpg?raw=true"
+          alt="Kyoto University"
+  class="img-fluid square-profile"
+  style="margin-bottom: 15px;"
+        />
+        <h3>
+          <img
+    src="https://github.com/88gh/3sunbi.com/blob/main/images/gat/baekgat_s_cb.png?raw=true"
+    alt="박준"
+    style="width: 50px; height: auto;"
+          /><br>
+          박준</h3>
+        <p>
+          교토대학원 지능정보학 석사<br>
+          AI, LLM 관련 서비스 기획, 개발 프리랜서
+        </p>
+        <div class="mt-3">
+          <a href="https://bio.link/joonpark" class="btn btn-success mb-2 btn-psunbi">박선비의 개인 홈페이지</a>
+        </div>
+      </div>
+
+      <!-- 황건휘 -->
+      <div class="col-md-4 mb-4">
+        <img
+          src="https://github.com/88gh/3sunbi.com/blob/main/images/hsunbi_profile2.jpg?raw=true"
+          alt="Hokkaido University"
+  class="img-fluid square-profile"
+  style="margin-bottom: 15px;"
+        />
+        <h3>
+          <img
+    src="https://github.com/88gh/3sunbi.com/blob/main/images/gat/hwanggat_s_cb.png?raw=true"
+    alt="황건휘"
+    style="width: 50px; height: auto;"
+          /><br>
+          황건휘</h3>
+        <p>
+          홋카이도대학원 물리공학박사<br>
+          양자역학 관련 분야 연구
+        </p>
+        <div class="mt-3">
+          <a href="https://88gh.github.io/kr/" class="btn btn-success mb-2 btn-hsunbi">황선비의 개인 홈페이지</a>
+        </div>
+      </div>
+
+      <!-- 노경오 -->
+      <div class="col-md-4 mb-4">
+        <img
+          src="https://github.com/88gh/3sunbi.com/blob/main/images/nsunbi_profile.jpg?raw=true"
+          alt="Nogyeongo Symbol"
+  class="img-fluid square-profile"
+  style="margin-bottom: 15px;"
+        />
+        <h3>
+          <img
+    src="https://github.com/88gh/3sunbi.com/blob/main/images/gat/cheonggat_s_cb.png?raw=true"
+    alt="노경오"
+    style="width: 50px; height: auto;"
+          /><br>
+          노경오</h3>
+        <p>
+          도쿄공업대학 이학부 화학계 재학<br>
+<!--          일본 대형 로펌 TMI법률사무소 변리사 (재직예정)-->
+          일본 로펌 변리사 (재직예정)
+        </p>
+        <div class="mt-3">
+<!--          <a href="https://sites.google.com/view/nohgyeongoh/" class="btn btn-success mb-2">노선비의 개인 홈페이지</a>-->
+          <a href="https://steadystudy98.github.io/" class="btn btn-success mb-2 btn-nsunbi">노선비의 개인 홈페이지</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- History Section -->
+<section id="history" class="py-20">
+  <div class="container">
+    <!-- Heading -->
+    <h2 class="text-3xl font-bold mb-12 text-center gradient-text">
+      <img 
+        src="https://github.com/88gh/3sunbi.com/blob/main/images/gat/pinkgat_s_cb.png?raw=true" 
+        alt="Pink Gat"
+        style="width: 70px; height: auto;"
+      /><br>
+      History</h2>
+
+    <!-- White card with a box shadow -->
+    <div class="history-card" style="
+      font-size: 16px;
+      background-color: #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    ">
+      <!-- Intro / Explanation -->
+      <p style="margin: 0;">
+        삼선비는
+        <a
+          href="https://ko.wikipedia.org/wiki/%ED%95%9C%EC%9D%BC%EA%B3%B5%EB%8F%99%EC%9D%B4%EA%B3%B5%EA%B3%84%ED%95%99%EB%B6%80%EC%9C%A0%ED%95%99%EC%83%9D"
+          target="_blank"
+          style="color: inherit; text-decoration: none;"
+        >
+          한일공동이공계학부유학생
+        </a>
+        선발시험에 합격한 제18기 국비장학생 세명으로 구성된 모임입니다!
+      </p>
+
+      <!-- Timebox list container -->
+      <div class="timebox-list">
+
+        <!-- timebox 2016 -->
+        <div class="timebox">
+          <div class="timebox-above">
+            <h3>2016년</h3>
+          </div>
+          <div class="timebox-line-container"></div>
+          <div class="timebox-below">
+            <p>&#8226; 11월<br>
+              한일공동이공계학부유학생 선발</p>
+          </div>
+        </div>
+
+        <!-- timebox 2017 -->
+        <div class="timebox">
+          <div class="timebox-above">
+            <h3>2017년</h3>
+          </div>
+          <div class="timebox-line-container"></div>
+          <div class="timebox-below">
+            <p>&#8226; 3월<br>
+              경희대 국제교육원 일본어예비교육</p>
+            <p>&#8226; 10월<br>
+              일본 유수 국공립대 일본어예비교육</p>
+          </div>
+        </div>
+
+        <!-- timebox 2018 -->
+        <div class="timebox">
+          <div class="timebox-above">
+            <h3>2018년</h3>
+          </div>
+          <div class="timebox-line-container"></div>
+          <div class="timebox-below">
+            <p>&#8226; 4월<br>
+              일본 유수 국공립대 이공계학부 입학</p>
+          </div>
+        </div>
+
+        <!-- timebox 2019 -->
+        <div class="timebox">
+          <div class="timebox-above">
+            <h3>2019년</h3>
+          </div>
+          <div class="timebox-line-container"></div>
+          <div class="timebox-below">
+            <!-- (No text for 2019) -->
+          </div>
+        </div>
+
+        <!-- timebox 2020 -->
+        <div class="timebox">
+          <div class="timebox-above">
+            <h3>2020년</h3>
+          </div>
+          <div class="timebox-line-container"></div>
+          <div class="timebox-below">
+            <!-- (No text for 2020) -->
+          </div>
+        </div>
+
+        <!-- timebox 2021 -->
+        <div class="timebox">
+          <div class="timebox-above">
+            <h3>2021년</h3>
+          </div>
+          <div class="timebox-line-container"></div>
+          <div class="timebox-below">
+            <!-- (No text for 2021) -->
+          </div>
+        </div>
+
+        <!-- timebox 2022 -->
+        <div class="timebox">
+          <div class="timebox-above">
+            <h3>2022년</h3>
+          </div>
+          <div class="timebox-line-container"></div>
+          <div class="timebox-below">
+            <!-- (No text for 2022) -->
+          </div>
+        </div>
+
+        <!-- timebox 2023 -->
+        <div class="timebox">
+          <div class="timebox-above">
+            <h3>2023년</h3>
+          </div>
+          <div class="timebox-line-container"></div>
+          <div class="timebox-below">
+            <p>&#8226; 7월<br>
+              삼선비에듀 런칭</p>
+          </div>
+        </div>
+
+        <!-- timebox 2024 -->
+        <div class="timebox">
+          <div class="timebox-above">
+            <h3>2024년</h3>
+          </div>
+          <div class="timebox-line-container"></div>
+          <div class="timebox-below">
+            <!-- (No text for 2024) -->
+          </div>
+        </div>
+
+        <!-- timebox 2025 -->
+        <div class="timebox">
+          <div class="timebox-above">
+            <h3>2025년</h3>
+          </div>
+          <div class="timebox-line-container"></div>
+          <div class="timebox-below">
+            <p>&#8226; 2월<br>
+              삼선비닷컴 개설</p>
+          </div>
+        </div>
+
+      </div> <!-- end .timebox-list -->
+    </div> <!-- end .history-card -->
+  </div> <!-- end .container -->
+</section>
+
+
+<!-- About Section (with "선비들" content) -->
+<section id="career" style="margin-top: 80px;">
+  <div class="container">
+    <!--<h2 style="margin-bottom: 20px;">Experience</h2>-->
+    <h2 class="text-3xl font-bold mb-12 text-center gradient-text">
+      <img 
+        src="https://github.com/88gh/3sunbi.com/blob/main/images/gat/pinkgat_s_cb.png?raw=true" 
+        alt="Pink Gat"
+        style="width: 70px; height: auto;"
+      /><br>
+      Brief Career</h2>
+
+    <!-- 박준 -->
+    <div class="exp-row mb-4" style="margin-left: 20px; margin-right: 20px;">
+      <div class="exp-col-auto">
+        <img
+          src="https://github.com/88gh/3sunbi.com/blob/main/images/kyodai_logo.png?raw=true"
+          alt="Kyoto University"
+          style="max-width: 180px; margin-bottom: 15px;"
+        />
+      </div>
+      <div class="exp-col" style="margin-left: 30px;">
+        <h3 style="margin: 0 0 0.5rem; font-size: 1.125rem;">
+          박준
+        </h3>
+        <p style="font-size: 16px; margin: 0;">
+          교토대학대학원 지능정보학코스 장학생 (석사졸업)<br>
+          오카야마대학교 수학과 국비장학생 (학사졸업)<br>
+          SKT, 국립농업과학원 등 대기업/공공기관 출강 및 AI 컨설팅<br>
+          패스트캠퍼스 AI 강의 다수 진행, Best강의 선정 2건<br>
+          준랩 | JoonLab 유튜브 채널 운영 및 AI/생산성 커뮤니티(300+) 운영<br>
+          숨고 플랫폼 생성형 인공지능 관련 서비스, 챗봇 개발 프로젝트 50+ 진행 및 수학 분야 상위 0.1% 튜터
+        </p>
+      </div>
+    </div>
+
+    <!-- 황건휘 -->
+    <div class="exp-row mb-4" style="margin-left: 20px; margin-right: 20px;">
+      <div class="exp-col-auto">
+        <img
+          src="https://github.com/88gh/3sunbi.com/blob/main/images/hokudai_logo.png?raw=true"
+          alt="Hokkaido University"
+          style="max-width: 180px; margin-bottom: 15px;"
+        />
+      </div>
+      <div class="exp-col" style="margin-left: 30px;">
+        <h3 style="margin: 0 0 0.5rem; font-size: 1.125rem;">
+          황건휘
+        </h3>
+        <p style="font-size: 16px; margin: 0;">
+          홋카이도대학대학원 응용물리학전공 장학생 (석사졸업, 박사재학)<br>
+          홋카이도대학교 응용물리공학코스 국비장학생 (학사졸업)<br>
+          미국물리학회 저널 제1저자 논문 1편<br>
+          카이스트 물리학과 학과세미나 연사 초청<br>
+          국제학회 발표 4건, 일본물리학회 발표 5건, 한국물리학회 발표 1건 외, 국제학회 참석 및 발표 다수<br>
+          게임&#183;로봇&#183;개발업계 대표 및 관계자 물리&#183;수학 컨설팅 및 과외, 학부생 양자역학&#183;공학수학 조교 등 지도경험 8년+
+        </p>
+      </div>
+    </div>
+
+    <!-- 노경오 -->
+    <div class="exp-row mb-4" style="margin-left: 20px; margin-right: 20px;">
+      <div class="exp-col-auto">
+        <img
+          src="https://github.com/88gh/3sunbi.com/blob/main/images/tokodai_logo.png?raw=true"
+          alt="Nogyeongo Symbol"
+          style="max-width: 180px; margin-bottom: 15px;"
+        />
+      </div>
+      <div class="exp-col" style="margin-left: 30px;">
+        <h3 style="margin: 0 0 0.5rem; font-size: 1.125rem;">
+          노경오
+        </h3>
+        <p style="font-size: 16px; margin: 0;">
+          도쿄공업대학교 화학계 국비장학생 (학사졸업)<br>
+          고려대학교 정경대학 행정학과 정시합격 (2022학년도)<br>
+          일본 변리사시험 합격 (2024년)<br>
+          일본 변리사 실무수습 수료 (2025년)<br>
+          EJU/센터시험 분석 등 일본유학/입시 컨설팅 및 화학과목 지도경험 다수
+        </p>
+      </div>
+    </div>
+    
+    <p style="font-size: 16px; margin: 0; margin-top: 16px;">
+      삼선비 공통 언어능력: 영어(TOEIC 900점대), 일본어(N1), 프로그래밍 언어 등.<br>
+      그 외 경험 및 경력은 개인 홈페이지 등을 참고해주세요!
+    </p>
+  </div>
+</section>
+
+<!-- Career Section 
+<section id="career" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-12 text-center gradient-text">
+      Career
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="card bg-white rounded-xl shadow-lg p-6">
+        <h3 class="text-xl font-semibold mb-2">주요 경력 1</h3>
+        <p class="text-gray-600 mb-2">경력 상세 설명 예시</p>
+        <a href="#" class="text-blue-600 hover:underline">(관련 링크 등)</a>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Vision Section -->
+<section id="vision" class="py-20 bg-gray-50">
+  <div class="container">
+    <h2 class="text-3xl font-bold mb-12 text-center gradient-text">
+      <img 
+        src="https://github.com/88gh/3sunbi.com/blob/main/images/gat/pinkgat_s_cb.png?raw=true" 
+        alt="Pink Gat"
+        style="width: 70px; height: auto;"
+      /><br>
+      Vision</h2>
+
+    <!-- White box with shadow -->
+    <div style="background-color: #fff; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); padding: 1rem; border-radius: 1rem;">
+      <!-- Explanatory text -->
+      <p style="margin-bottom: 1rem;">
+        삼선비는 다음과 같은 서비스를 기획하고 있습니다!
+      </p>
+
+      <!-- Mind Map Container -->
+<!--      <div class="circle-list" style="max-width: 70%; margin: 0 auto;">
+        <div class="circle-item2" style="--branch-color: #2563eb;">Vision of 3sunbi</div>
+      </div>-->
+
+      <!-- Circle list container (max-width: 70% of parent, centers horizontally) -->
+      <div class="circle-list">
+        <!-- Each circle item has text inside, color set via --branch-color -->
+        <div class="circle-item" style="--branch-color: #E77676;">챗봇</div>
+        <div class="circle-item" style="--branch-color: #6BCB77;">AI</div>
+        <div class="circle-item" style="--branch-color: #4D96FF;">교육앱</div>
+        <div class="circle-item" style="--branch-color: #FFD93D;">과외</div>
+        <div class="circle-item" style="--branch-color: #C34A36;">강의플랫폼</div>
+        <div class="circle-item" style="--branch-color: #845EC2;">외주</div>
+        <div class="circle-item" style="--branch-color: #00C9A7;">법률상담</div>
+      </div>
+
+  </div>
+</section>
+
+<!-- 
+Copyright (C) 2025 Geonhwi Hwang. All Rights Reserved.
+NOTICE: All information contained herein is, and remains the property of Geonhwi Hwang. The intellectual and technical concepts contained herein are proprietary and protected by copyright law.
+Unauthorized use, duplication, or dissemination of this information is strictly forbidden without prior written permission from Geonhwi Hwang. This includes unauthorized analysis, deobfuscation, or reverse engineering for any purpose.
+-->
+
+<!-- Contact Section -->
+<section id="contact" class="py-20">
+  <div class="container">
+    <h2 class="text-3xl font-bold mb-12 text-center gradient-text">
+      <img 
+        src="https://github.com/88gh/3sunbi.com/blob/main/images/gat/pinkgat_s_cb.png?raw=true" 
+        alt="Pink Gat"
+        style="width: 70px; height: auto;"
+      /><br>
+      Contact</h2>
+    
+    <!-- 삼선비 row -->
+    <div class="row align-items-center mb-4">
+      <!-- Left: name -->
+      <div class="col-md-2 col-12 text-center" style="min-width: 22%;">
+        <h4>삼선비</h4>
+      </div>
+      <!-- Right: icons, with vertical line -->
+      <div class="col-md-10 col-12" style="border-left: 1px solid #ccc;">
+        <div class="row justify-content-start">
+          <!-- Example Icons (repeat as needed) -->
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://3sunbi.com/"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/3sunbi.com/blob/main/images/3sunbiedu_sq_4_3.png?raw=true"
+                alt="3sunbi"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="mailto:%33%73%75%6E%62%69%65%64%75%40%67%6D%61%69%6C%2E%63%6F%6D"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/88gh.github.io/blob/main/Gmail_Logo_512px_2.png?raw=true"
+                alt="E-mail"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://3sunbiedu.framer.ai/"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/88gh.github.io/blob/main/3sunbiedu_sq_4_1.png?raw=true"
+                alt="삼선비에듀"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://www.youtube.com/@3sunbi"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/3sunbi.com/blob/main/images/yt2.png?raw=tru"
+                alt="삼선비에듀 유튜브"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 박선비 row -->
+    <div class="row align-items-center mb-4">
+      <!-- Left: name -->
+      <div class="col-md-2 col-12 text-center" style="min-width: 22%;">
+        <h4>박선비</h4>
+      </div>
+      <!-- Right: icons, with vertical line -->
+      <div class="col-md-10 col-12" style="border-left: 1px solid #ccc;">
+        <div class="row justify-content-start">
+          <!-- Example Icons (repeat as needed) -->
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://bio.link/joonpark"
+              target="_blank"
+            >
+              <img
+                src="https://framerusercontent.com/images/FF7NXlA56DMcR4BN7aB9IBa5uCI.png"
+                alt="https://bio.link/joonpark"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="mailto:%77%6E%73%39%31%33%33%40%67%6D%61%69%6C%2E%63%6F%6D"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/88gh.github.io/blob/main/Gmail_Logo_512px_2.png?raw=true"
+                alt="E-mail"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://open.kakao.com/o/sUXWYvlf"
+              target="_blank"
+            >
+              <img
+                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/453a624d017900001.png"
+                alt="KakaoTalk"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://soomgo.com/profile/users/7524519"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/3sunbi.com/blob/main/images/soomgo.jpg?raw=true"
+                alt="Soomgo"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://www.youtube.com/@joonlab98"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/3sunbi.com/blob/main/images/yt2.png?raw=tru"
+                alt="박선비 유튜브"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 황선비 row -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-2 col-12 text-center" style="min-width: 22%;">
+        <h4>황선비</h4>
+      </div>
+      <div class="col-md-10 col-12" style="border-left: 1px solid #ccc;">
+        <div class="row justify-content-start">
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://88gh.github.io/kr/"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/88gh.github.io/blob/main/kr/icon_gh_rkr.png?raw=true"
+                alt="Geonhwi Hwang's webpage"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="mailto:%74%68%65%70%72%65%78%31%40%6E%61%76%65%72%2E%63%6F%6D"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/88gh.github.io/blob/main/naver_mail.png?raw=true"
+                alt="NAVER E-mail"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+<!--          <div class="col-md-2 col-3 text-center">
+            <a
+              href="mailto:%74%68%65%70%72%65%78%32%40%65%69%73%2E%68%6F%6B%75%64%61%69%2E%61%63%2E%6A%70"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/88gh.github.io/blob/main/Gmail_Logo_512px_2.png?raw=true"
+                alt="E-mail"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>-->
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://soomgo.com/profile/users/14344686"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/3sunbi.com/blob/main/images/soomgo.jpg?raw=true"
+                alt="Soomgo"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a href="https://bio.link/geonhwi" target="_blank">
+              <img
+                src="https://github.com/88gh/88gh.github.io/blob/main/bio.link.png?raw=true"
+                alt="BIO LINK"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a href="https://orcid.org/0009-0005-2973-255X" target="_blank">
+              <img
+                src="https://github.com/88gh/88gh.github.io/blob/main/ORCID_iD.png?raw=true"
+                alt="ORCID"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://scholar.google.com/citations?user=GuVNvrYAAAAJ&hl=en&oi=sra"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/88gh.github.io/blob/main/scholar.png?raw=true"
+                alt="Google Scholar"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 노선비 row -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-2 col-12 text-center" style="min-width: 22%;">
+        <h4>노선비</h4>
+      </div>
+      <div class="col-md-10 col-12" style="border-left: 1px solid #ccc;">
+        <div class="row justify-content-start">
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="https://steadystudy98.github.io/"
+              target="_blank"
+            >
+              <img
+                src="https://steadystudy98.github.io/images/logo.png"
+                alt="Noh's Unpatent Site"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+<!--            <a
+              href="https://sites.google.com/view/nohgyeongoh/"
+              target="_blank"
+            >
+              <img
+                src="https://ssl.gstatic.com/atari/images/aristotle-header-dark.jpg?raw=true"
+                alt="NGO's Homepage"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>-->
+          <div class="col-md-2 col-3 text-center">
+            <a
+              href="mailto:%6E%6F%68%2E%67%2E%61%62%40%6D%2E%74%69%74%65%63%68%2E%61%63%2E%6A%70"
+              target="_blank"
+            >
+              <img
+                src="https://github.com/88gh/88gh.github.io/blob/main/Gmail_Logo_512px_2.png?raw=true"
+                alt="E-mail"
+      class="img-fluid rounded square-button"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 
+Copyright (C) 2025 Geonhwi Hwang. All Rights Reserved.
+NOTICE: All information contained herein is, and remains the property of Geonhwi Hwang. The intellectual and technical concepts contained herein are proprietary and protected by copyright law.
+Unauthorized use, duplication, or dissemination of this information is strictly forbidden without prior written permission from Geonhwi Hwang. This includes unauthorized analysis, deobfuscation, or reverse engineering for any purpose.
+-->
+<!-- LINKS Section -->
+<section id="links" class="py-20">
+  <div class="container" style="text-align: left;">
+    <h2 class="text-3xl font-bold mb-12 text-center gradient-text">
+      <img 
+        src="https://github.com/88gh/3sunbi.com/blob/main/images/gat/pinkgat_s_cb.png?raw=true" 
+        alt="Pink Gat"
+        style="width: 70px; height: auto;"
+      /><br>
+      Links</h2>
+
+    <div class="row" style="font-size:16px !important;">
+      <!-- LEFT COLUMN: 삼선비 -->
+      <div class="col-md-6 mb-4">
+          <div style="background-color: #fff; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); padding: 1rem; border-radius: 1rem; margin-bottom: 0.5rem;">
+            <!-- 삼선비 -->
+<div style="display: flex; align-items: flex-start;">
+            <div style="min-width: 80px; /* enough space for the heading */border-right: 2px solid #000; padding-right: 0.8rem;">
+              <h3 style="font-size: 18px; margin: 0;">삼선비</h3>
+            </div>
+            <div style="margin-left: 0.8rem;">
+              <p>&#8226; <a href="https://www.3sunbi.com/" target="_blank" style="color: inherit;">삼선비</a></p>
+              <p style="margin-left: 1rem;">– <a href="https://3sunbiedu.framer.ai/" target="_blank" style="color: inherit;">삼선비에듀</a></p>
+              <p style="margin-left: 1rem;">– <a href="https://www.youtube.com/@3sunbi/" target="_blank" style="color: inherit;">삼선비에듀 유튜브</a></p>
+              <p>&#8226; <a href="https://ko.wikipedia.org/wiki/%ED%95%9C%EC%9D%BC%EA%B3%B5%EB%8F%99%EC%9D%B4%EA%B3%B5%EA%B3%84%ED%95%99%EB%B6%80%EC%9C%A0%ED%95%99%EC%83%9D" target="_blank" style="color: inherit;">한일공동이공계학부유학생 선발사업</a></p>
+              <p style="margin-left: 1rem;">– <a href="http://www.niied.go.kr/user/nd35203.do" target="_blank" style="color: inherit;">대한민국 교육부 국립국제교육원</a></p>
+              <p style="margin-left: 2rem;">– <a href="https://iie.khu.ac.kr/en/" target="_blank" style="color: inherit;">경희대학교 국제교육원</a></p>
+              <p style="margin-left: 1rem;">– <a href="https://www.jasso.go.jp/en/ryugaku/scholarship_j/index.html" target="_blank" style="color: inherit;">일본국 문부과학성 일본학생지원기구</a></p>
+              <p style="margin-left: 2rem;">– <a href="https://isc.high.hokudai.ac.jp/" target="_blank" style="color: inherit;">북해도대학교 고등교육추진기구</a></p>
+            </div>
+</div>
+          </div>
+      </div>
+
+      <!-- RIGHT COLUMN: 박선비, 황선비, 노선비 -->
+      <div class="col-md-6 mb-4">
+          <div style="background-color: #fff; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); padding: 1rem; border-radius: 1rem; margin-bottom: 0.5rem;">
+
+            <!-- 박선비 -->
+<div style="display: flex; align-items: flex-start;">
+            <div style="min-width: 80px; /* enough space for the heading */border-right: 2px solid #000; padding-right: 0.8rem;">
+              <h3 style="font-size: 18px; margin: 0;">박선비</h3>
+            </div>
+            <div style="margin-left: 0.8rem; margin-bottom: 0.8rem;">
+              <p>&#8226; <a href="https://bio.link/joonpark" target="_blank" style="color: inherit;">박선비 홈페이지</a></p>
+              <p>&#8226; <a href="https://www.okayama-u.ac.jp/index_e.html" target="_blank" style="color: inherit;">오카야마대학교</a></p>
+              <p style="margin-left: 1rem;">– <a href="https://www.okayama-u.ac.jp/eng/prospective_students/PA_School_of_Science.html" target="_blank" style="color: inherit;">오카야마대학교 이학부</a></p>
+              <p style="margin-left: 2rem;">– <a href="https://www.science.okayama-u.ac.jp/en/research/research-summary/department-of-mathematics/" target="_blank" style="color: inherit;">수학과</a></p>
+              <p>&#8226; <a href="https://www.kyoto-u.ac.jp/en" target="_blank" style="color: inherit;">교토대학교</a></p>
+              <p style="margin-left: 1rem;">– <a href="https://www.i.kyoto-u.ac.jp/en/" target="_blank" style="color: inherit;">교토대학대학원 정보학연구과</a></p>
+              <p style="margin-left: 2rem;">– <a href="https://www.ist.i.kyoto-u.ac.jp/en/" target="_blank" style="color: inherit;">지능정보학코스</a></p>
+              <p style="margin-left: 3rem;">– <a href="https://www.ml.ist.i.kyoto-u.ac.jp/en/" target="_blank" style="color: inherit;">카시마연구실</a></p>
+            </div>
+</div>
+            <!-- 황선비 -->
+<div style="display: flex; align-items: flex-start;">
+            <div style="min-width: 80px; /* enough space for the heading */border-right: 2px solid #000; padding-right: 0.8rem;">
+              <h3 style="font-size: 18px; margin: 0;">황선비</h3>
+            </div>
+            <div style="margin-left: 0.8rem; margin-bottom: 0.8rem;">
+              <p>&#8226; <a href="https://88gh.github.io/kr/" target="_blank" style="color: inherit;">황선비 홈페이지</a></p>
+              <p>&#8226; <a href="https://www.hokudai.ac.jp/" target="_blank" style="color: inherit;">북해도대학교</a></p>
+              <p style="margin-left: 1rem;">– <a href="https://www.eng.hokudai.ac.jp/graduate/" target="_blank" style="color: inherit;">북해도대학대학원 공학원</a></p>
+              <p style="margin-left: 2rem;">– <a href="https://applphys.net/diven/" target="_blank" style="color: inherit;">응용물리학전공</a></p>
+              <p style="margin-left: 3rem;">– <a href="https://subutu-ap.eng.hokudai.ac.jp/index.htm" target="_blank" style="color: inherit;">수리물리공학연구실</a></p>
+              <p style="margin-left: 3rem;">– <a href="https://ssp-ap.eng.hokudai.ac.jp/" target="_blank" style="color: inherit;">고체물리학연구실</a></p>
+              <p style="margin-left: 3rem;">– <a href="https://www.eng.hokudai.ac.jp/labo/tssp/index.html" target="_blank" style="color: inherit;">물성물리공학연구실</a></p>
+              <p>&#8226; <a href="https://sites.google.com/eis.hokudai.ac.jp/exexphd-fellow/home?authuser=0" target="_blank" style="color: inherit;">EXEX 박사인재 펠로우쉽</a></p>
+            </div>
+</div>
+            <!-- 노선비 -->
+<div style="display: flex; align-items: flex-start;">
+            <div style="min-width: 80px; /* enough space for the heading */border-right: 2px solid #000; padding-right: 0.8rem;">
+              <h3 style="font-size: 18px; margin: 0;">노선비</h3>
+            </div>
+            <div style="margin-left: 0.8rem; margin-bottom: 0.8rem;">
+              <p>&#8226; <a href="https://sites.google.com/view/nohgyeongoh/" target="_blank" style="color: inherit;">노선비 홈페이지</a></p>
+              <p>&#8226; <a href="https://www.titech.ac.jp/english/" target="_blank" style="color: inherit;">도쿄공업대학교</a></p>
+              <p style="margin-left: 1rem;">– <a href="https://www.isct.ac.jp/en/001/about/organizations/school-of-science" target="_blank" style="color: inherit;">도쿄공업대학교 이학원</a></p>
+              <p style="margin-left: 2rem;">– <a href="https://educ.titech.ac.jp/chem/eng/" target="_blank" style="color: inherit;">화학계</a></p>
+              <p style="margin-left: 3rem;">– <a href="http://www.chemistry.titech.ac.jp/~taniguchi/index.html" target="_blank" style="color: inherit;">타니구치연구실</a></p>
+              <p>&#8226; <a href="https://www.korea.ac.kr" target="_blank" style="color: inherit;">고려대학교</a></p>
+              <p style="margin-left: 1rem;">– <a href="https://hoan.korea.ac.kr/hoan/index.do" style="color: inherit;">고려대학교 정경대학</a></p>
+              <p style="margin-left: 2rem;">– <a href="https://kupa.korea.ac.kr/ko/index.do" target="_blank" style="color: inherit;">행정학과</a></p>
+              <p>&#8226; <a href="https://www.jpaa.or.jp/en/" target="_blank" style="color: inherit;">일본변리사회</a></p>
+<!--              <p style="margin-left: 1rem;">– <a href="https://www.tmi.gr.jp" target="_blank" style="color: inherit;">TMI종합법률사무소</a></p>-->
+            </div>
+</div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer (light background, dark text) -->
+<footer class="bg-white text-dark py-4" style="border-top: 1px solid #ccc;">
+  <div class="container text-center">
+    <p style="color: #202022;">
+      © 2025 Geonhwi Hwang. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- theprex2.js ensures splash → scrolled after 2s, also on scroll -->
+<script src="scripts/theprex2.js"></script>
+</body>
+</html>
