@@ -1,19 +1,28 @@
 /* 1) Custom font face (TitleMedium) */
-@font-face {
+/* @font-face {
     font-family: 'TitleMedium';
     src: url('https://raw.githubusercontent.com/88gh/3sunbi.com/main/styles/Title_Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 /* 2) Base body styling */
+/*body {
+    margin: 0;
+    font-family: 'TitleMedium', sans-serif;  
+    background-color: #f8f9fa;               
+    color: #202022;                         
+    line-height: 1.6;
+}*/
 body {
     margin: 0;
-    font-family: 'TitleMedium', sans-serif;  /* use TitleMedium + fallback */
+    font-family: 'Libre Baskerville', 'Gowun Batang', 'Sawarabi Mincho', serif;  /* use TitleMedium + fallback */
     background-color: #f8f9fa;               /* light background */
     color: #202022;                          /* dark text */
     line-height: 1.6;
-}
+}*/
+
+
 
 /* 3) Gradient text effect */
 .gradient-text {
