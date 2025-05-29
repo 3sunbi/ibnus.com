@@ -64,13 +64,10 @@ body {
     overflow: hidden; /* so the pseudo-element overlay stays contained */
 
     /* The image is always in the background. We'll fade overlays on top of it. */
-    background:
-/*      url('https://github.com/88gh/3sunbi.com/blob/main/images/why3sunbi2.png?raw=true')*/
-      url('https://github.com/88gh/3sunbi.com/blob/main/images/3sunbi_bg_2.png?raw=true')
-      center center / cover no-repeat;
+    background: transparent;
 
     /* This transition is for the "roll-up" effect (height: 100vh → 60px) */
-    transition: height 1s ease; /* pick your duration & easing */
+    transition: height 0.3s ease; /* pick your duration & easing */
 }
 
 /* By default, let's assume a small header size (for scrolled state).
@@ -78,13 +75,20 @@ body {
    #site-header { height: 60px; }
    But we'll rely on .scrolled to define that final state. */
 
+#site-header.scrolled {
+    transform: translateY(-100%); /* 위로 100% 이동하여 사라짐 */
+    height: 112px;
+}
+#site-header.scrolled::before {
+    background-color: rgba(255, 255, 255, 0.9); /* 스크롤 시 배경색 (선택사항) */
+}
 /* PSEUDO-ELEMENT OVERLAY: We'll animate its background color to avoid flicker */
 #site-header::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     pointer-events: none; /* don't block clicks */
-    background-color: rgba(0, 0, 0, 1); /* start fully black overlay */
+    background-color: transparent; /* start fully black overlay */
     transition: background-color 0.5s ease; /* for the post-2s fade from 15% → 47% */
 }
 
