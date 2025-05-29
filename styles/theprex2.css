@@ -20,9 +20,7 @@ body {
     background-color: #f8f9fa;               /* light background */
     color: #202022;                          /* dark text */
     line-height: 1.6;
-}*/
-
-
+}
 
 /* 3) Gradient text effect */
 .gradient-text {
@@ -33,27 +31,6 @@ body {
     color: transparent;
 }
 
-/* 4) Navigation link styling */
-.nav-link {
-    display: inline-block;
-    position: relative;
-    color: #1f2937;             /* text-gray-800 */
-    text-decoration: none;
-    padding: 0.5rem;
-}
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #4f46e5;
-    transition: width 0.3s ease;
-}
-.nav-link:hover::after {
-    width: 100%;
-}
 /* ============ TRANSPARENT HEADER STYLING ============ */
 
 /* The header container - always fixed at top with transparency */
@@ -176,7 +153,60 @@ section {
   }
 }
 
-/* Optional: Add a subtle gradient overlay on video for even better text readability */
+/* ============ RESPONSIVE VIDEO HERO SECTION ============ */
+
+/* Video hero container - full viewport coverage */
+.video-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* This is crucial - hides overflow on narrow screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* The video element - responsive sizing */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  /* Default: fit width, maintain aspect ratio */
+  width: 100%;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  
+  /* Ensure video covers full area */
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* For very narrow screens (mobile portrait) - prioritize full coverage */
+@media (max-width: 768px) {
+  .hero-video {
+    /* Force full height coverage on mobile */
+    width: auto;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+/* For extremely narrow screens */
+@media (max-width: 480px) {
+  .hero-video {
+    /* Ensure minimum width coverage even if video gets cropped */
+    min-width: 120%; /* This ensures sides get cropped rather than showing black bars */
+    object-fit: cover;
+  }
+}
+
+/* Optional: Add a subtle gradient overlay on video for better text readability */
 .video-hero::before {
   content: '';
   position: absolute;
@@ -187,11 +217,6 @@ section {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
   z-index: 1;
   pointer-events: none;
-}
-
-/* Ensure video container has relative positioning for the overlay */
-.video-hero {
-  position: relative;
 }
 
 /* ============ ============ */
@@ -314,7 +339,7 @@ section {
 /* 
    1) Container that holds all timeboxes in a row, wrapping as needed.
    If you want them left-aligned within a parent .history-card, 
-   just ensure .history-card doesn’t force center alignment. 
+   just ensure .history-card doesn't force center alignment. 
 */
 .timebox-list {
   display: flex;
