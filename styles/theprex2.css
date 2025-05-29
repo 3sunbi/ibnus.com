@@ -68,6 +68,7 @@ body {
 
     /* This transition is for the "roll-up" effect (height: 100vh → 60px) */
     transition: height 0.3s ease; /* pick your duration & easing */
+    height: 112px;
 }
 
 /* By default, let's assume a small header size (for scrolled state).
@@ -77,7 +78,6 @@ body {
 
 #site-header.scrolled {
     transform: translateY(-100%); /* 위로 100% 이동하여 사라짐 */
-    height: 112px;
 }
 #site-header.scrolled::before {
     background-color: rgba(255, 255, 255, 0.9); /* 스크롤 시 배경색 (선택사항) */
