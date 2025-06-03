@@ -262,13 +262,13 @@ section {
 /* BUTTON            @@@@@@@@@@@@@@@@@@@@@   starts*/
 
 .btn.btn-success.btn-psunbi {
-  background-color: #fff !important;  /* white background */
-  border-color: #444 !important;      /* darker gray or black border */
-  color: #000 !important;            /* black text */
+  background-color: #B3A08D !important;
+  border-color: #B3A08D !important;
+  color: #fff !important;
 }
 .btn.btn-success.btn-psunbi:hover {
-  background-color: #f2f2f2 !important; /* or #e6e6e6, etc. */
-  border-color: #444 !important;
+  background-color: #9e8f7f !important; /* Slightly darker shade */
+  border-color: #9e8f7f !important;
 }
 
 .btn.btn-success.btn-hsunbi {
