@@ -42,7 +42,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 82px;
   z-index: 1000;
   overflow: hidden;
   /* Default transparent state */
@@ -154,12 +154,12 @@ body {
 }
 
 #site-header.scrolled .nav-link:hover {
-  color: #4f46e5;
+  color: #021658;
   text-shadow: none;
 }
 
 #site-header.scrolled .nav-link::after {
-  background-color: #4f46e5;
+  background-color: #021658;
   box-shadow: none;
 }
 
