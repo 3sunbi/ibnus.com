@@ -26,6 +26,13 @@ body {
     line-height: 1.6;
 }
 
+.gradient-text {
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    color: #021658; /* Your normal dark text color */
+}
+
 
 /* ============ HEADER TRANSITION STYLING ============ */
 
