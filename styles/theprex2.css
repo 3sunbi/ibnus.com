@@ -338,7 +338,7 @@ body {
   color: #fff !important;
 }
 .btn.btn-success.btn-nsunbi:hover {
-  background-color: #40638a !important;
+  background-color: #40638a !important; /* Slightly darker shade */
   border-color: #40638a !important;
 }
 
