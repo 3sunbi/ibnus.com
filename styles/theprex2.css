@@ -14,12 +14,12 @@
     color: #202022;                         
     line-height: 1.6;
 }*/
-body {
-  overflow-x: hidden;  /* Prevent horizontal scroll */
-}
 
 body {
     margin: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     font-family: 'Libre Baskerville', 'Gowun Batang', 'Sawarabi Mincho', serif;  /* use TitleMedium + fallback */
     background-color: #f8f9fa;               /* light background */
     color: #202022;                          /* dark text */
