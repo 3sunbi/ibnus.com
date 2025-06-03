@@ -305,7 +305,7 @@ body {
 .btn.btn-success.btn-hsunbi {
   background-color: #80a060 !important;
   border-color: #80a060 !important;
-  color: #000 !important;
+  color: #fff !important;
 }
 .btn.btn-success.btn-hsunbi:hover {
   background-color: #6e8a52 !important; /* Slightly darker shade */
