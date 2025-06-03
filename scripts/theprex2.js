@@ -14,26 +14,34 @@ window.addEventListener("DOMContentLoaded", () => {
   // 2) Immediately scroll to the top
   window.scrollTo(0, 0);
   
-  // 3) Immediately set header to scrolled state (no splash)
+  // 3) Get header element
   const header = document.getElementById("site-header");
   header.classList.remove("splash-active");
-  header.classList.add("scrolled");
   
-  // 4) Optional: Add scroll listener if you want header to change on scroll
+  // 4) Function to update header based on scroll position
   let ticking = false;
   
   function updateHeader() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const viewportHeight = window.innerHeight;
     
-    if (scrollTop > 50) {
+    // Add/remove classes based on scroll position
+    // When scrolled past the full viewport height (100vh), make header white
+    if (scrollTop > viewportHeight) {
       header.classList.add("scrolled");
+      header.classList.remove("transparent");
     } else {
       header.classList.remove("scrolled");
+      header.classList.add("transparent");
     }
     
     ticking = false;
   }
   
+  // 5) Initial call to set proper state
+  updateHeader();
+  
+  // 6) Add scroll listener
   window.addEventListener("scroll", () => {
     if (!ticking) {
       requestAnimationFrame(updateHeader);
