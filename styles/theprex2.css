@@ -325,13 +325,13 @@ body {
 }
 
 .btn.btn-success.btn-hsunbi {
-  background-color: #314734 !important;
-  border-color: #314734 !important;
+  background-color: #315834 !important;
+  border-color: #315834 !important;
   color: #fff !important;
 }
 .btn.btn-success.btn-hsunbi:hover {
-  background-color: #283b2b !important; /* Slightly darker for hover */
-  border-color: #283b2b !important;
+  background-color: #284a2c !important; /* Slightly darker for hover */
+  border-color: #284a2c !important;
 }
 
 .btn.btn-success.btn-nsunbi {
